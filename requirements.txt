@@ -1,0 +1,30 @@
+# INDEXER — Python Requirements
+
+# Telegram
+telethon>=1.36.0          # Telegram userbot (battle-tested, async)
+cryptg>=0.4.0             # C speedup for Telethon crypto
+
+# Discord (optional — evaluated separately due to ToS risk)
+# discord.py-self>=2.0.0  # ⚠️ RESEARCH REQUIRED before enabling
+
+# LLM
+requests>=2.31.0          # Ollama HTTP API
+httpx>=0.27.0             # Async HTTP client
+
+# Data
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+aiosqlite>=0.20.0         # Async SQLite for dedup store
+
+# Processing
+beautifulsoup4>=4.12.0    # HTML parsing for link enrichment
+trafilatura>=1.6.0        # Article extraction (better than BS4 for articles)
+
+# Utilities
+loguru>=0.7.0             # Structured logging
+tenacity>=8.2.0           # Retry logic for API calls
+schedule>=1.2.0           # Simple job scheduler
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
